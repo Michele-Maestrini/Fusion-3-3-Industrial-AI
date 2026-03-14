@@ -21,7 +21,7 @@ Standard deep learning pipelines applied to turbofan prognostics exhibit three s
 
 ### 2.1 The Piecewise-Linear RUL Trap
 
-Assuming engines degrade linearly from cycle 1 violates established fatigue mechanics (Miner, 1945). For the first $\sim$50–75 cycles, sensor noise is stochastic and indistinguishable from healthy operation — there is no discernible degradation trend. A model trained on a raw linear RUL target overfits to early-life noise rather than learning the thermodynamic signatures of genuine deterioration.
+Assuming engines degrade linearly from cycle 1 violates established fatigue mechanics (Miner, 1945). For the first $\sim$ 50–75 cycles, sensor noise is stochastic and indistinguishable from healthy operation — there is no discernible degradation trend. A model trained on a raw linear RUL target overfits to early-life noise rather than learning the thermodynamic signatures of genuine deterioration.
 
 FusionCore implements a **piecewise-linear clipped RUL target** (Heimes, 2008), capping the label at:
 
